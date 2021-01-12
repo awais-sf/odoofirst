@@ -48,6 +48,7 @@ class GenericTagModel(models.Model):
                         "'manage_tags_object_ids': active_ids,"
                         "}"),
                 })
+                print(record,'changes')
 
     @api.model
     def create(self, vals):
