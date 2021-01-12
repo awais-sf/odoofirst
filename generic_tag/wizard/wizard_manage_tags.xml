@@ -20,7 +20,7 @@
                     </group>
                 </sheet>
                 <footer>
-                    <button string="Apply" name="do_apply" class="btn-primary" type="object"/>
+                    <button string="Apply Done" name="do_apply" class="btn-primary" type="object"/>
                     <button string="Cancel" special="cancel"/>
                 </footer>
             </form>
