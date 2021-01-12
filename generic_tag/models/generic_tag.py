@@ -62,6 +62,7 @@ class GenericTag(models.Model):
     @api.depends()
     def _compute_objects_count(self):
         for tag in self:
+            print(tag,'change 2')
             if not tag.id:
                 tag.objects_count = 0
                 continue
