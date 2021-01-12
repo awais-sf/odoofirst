@@ -62,6 +62,7 @@ class GenericTag(models.Model):
     @api.depends()
     def _compute_objects_count(self):
         for tag in self:
+            print(tag,'change 5')
             print(tag,'change 2')
             if not tag.id:
                 tag.objects_count = 0
@@ -78,6 +79,7 @@ class GenericTag(models.Model):
     @api.depends('category_id.name', 'name')
     def _compute_complete_name(self):
         for tag in self:
+            print(tag,'3321')
             if tag.category_id:
                 tag.complete_name = "%s / %s" % (
                     tag.category_id.name, tag.name)
